@@ -1,5 +1,10 @@
 package loose.coupling.prac;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class BubbleSort implements Sorting {
 
     public int[] sort(int[] nums){
