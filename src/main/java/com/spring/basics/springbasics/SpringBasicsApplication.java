@@ -3,6 +3,7 @@ package com.spring.basics.springbasics;
 
 import loose.coupling.prac.basic.BinarySearch;
 import loose.coupling.prac.cdi.AnimalDao;
+import loose.coupling.prac.extractFromProp.ExtractPropFromProperties;
 import loose.coupling.prac.scope.PeopleDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,12 +11,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "loose.coupling.prac")
+@PropertySource("app.properties")
 public class SpringBasicsApplication {
 
 	private static Logger LOGGER= LoggerFactory.getLogger(SpringBasicsApplication.class);
+
 	public static void main(String[] args) {
 
 //		// setup for loose couple basic
@@ -41,6 +45,13 @@ public class SpringBasicsApplication {
 //	//	PeopleDao peopleDao1=applicationContext.getBean(PeopleDao.class);
 //		LOGGER.info("{}",animalDao);
 //		LOGGER.info("{}",animalDao.getJdbcConnetion());
+
+
+		//extract data from app.propeties files
+		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
+		ExtractPropFromProperties extractPropFromProperties=applicationContext.getBean(ExtractPropFromProperties.class);
+		System.out.println(extractPropFromProperties.returnUrl());
+
 
 	}
 
