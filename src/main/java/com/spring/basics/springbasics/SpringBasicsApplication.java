@@ -1,6 +1,8 @@
 package com.spring.basics.springbasics;
 
+
 import loose.coupling.prac.basic.BinarySearch;
+import loose.coupling.prac.cdi.AnimalDao;
 import loose.coupling.prac.scope.PeopleDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,14 +25,22 @@ public class SpringBasicsApplication {
 //		System.out.println(result);
 
 		// setup for loose couple scope
-		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
-		PeopleDao peopleDao=applicationContext.getBean(PeopleDao.class);
-		PeopleDao peopleDao1=applicationContext.getBean(PeopleDao.class);
-		LOGGER.info("{}",peopleDao);
-		LOGGER.info("{}",peopleDao.getJdbcConnetion());
-		LOGGER.info("{}",peopleDao1);
-		LOGGER.info("{}",peopleDao1.getJdbcConnetion());
+//		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
+//		PeopleDao peopleDao=applicationContext.getBean(PeopleDao.class);
+//		PeopleDao peopleDao1=applicationContext.getBean(PeopleDao.class);
+//		LOGGER.info("{}",peopleDao);
+//		LOGGER.info("{}",peopleDao.getJdbcConnetion());
+//		LOGGER.info("{}",peopleDao1);
+//		LOGGER.info("{}",peopleDao1.getJdbcConnetion());
 		//end
+
+
+		//setup cdi exmample
+		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
+		AnimalDao animalDao=applicationContext.getBean(AnimalDao.class);
+	//	PeopleDao peopleDao1=applicationContext.getBean(PeopleDao.class);
+		LOGGER.info("{}",animalDao);
+		LOGGER.info("{}",animalDao.getJdbcConnetion());
 
 	}
 
