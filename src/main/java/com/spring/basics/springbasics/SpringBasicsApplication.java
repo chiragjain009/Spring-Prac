@@ -18,7 +18,7 @@ public class SpringBasicsApplication {
 	private static Logger LOGGER= LoggerFactory.getLogger(SpringBasicsApplication.class);
 	public static void main(String[] args) {
 
-		// setup for loose couple basic
+//		// setup for loose couple basic
 //		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
 //		BinarySearch binarySearch=applicationContext.getBean(BinarySearch.class);
 //		int result=binarySearch.search(new int[]{1,2,3},3);
@@ -36,11 +36,11 @@ public class SpringBasicsApplication {
 
 
 		//setup cdi exmample
-		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
-		AnimalDao animalDao=applicationContext.getBean(AnimalDao.class);
-	//	PeopleDao peopleDao1=applicationContext.getBean(PeopleDao.class);
-		LOGGER.info("{}",animalDao);
-		LOGGER.info("{}",animalDao.getJdbcConnetion());
+//		ApplicationContext applicationContext=SpringApplication.run(SpringBasicsApplication.class, args);
+//		AnimalDao animalDao=applicationContext.getBean(AnimalDao.class);
+//	//	PeopleDao peopleDao1=applicationContext.getBean(PeopleDao.class);
+//		LOGGER.info("{}",animalDao);
+//		LOGGER.info("{}",animalDao.getJdbcConnetion());
 
 	}
 

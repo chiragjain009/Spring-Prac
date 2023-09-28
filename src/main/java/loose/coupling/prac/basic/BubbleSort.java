@@ -2,8 +2,9 @@ package loose.coupling.prac.basic;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Primary
 public class BubbleSort implements Sorting {
 
