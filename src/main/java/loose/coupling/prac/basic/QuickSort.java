@@ -1,4 +1,4 @@
-package loose.coupling.prac;
+package loose.coupling.prac.basic;
 
 import org.springframework.stereotype.Component;
 
