@@ -1,4 +1,4 @@
-package loose.coupling.prac.extractFromProp;
+package com.spring.basics.springbasics.loose.coupling.prac.extractFromProp;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

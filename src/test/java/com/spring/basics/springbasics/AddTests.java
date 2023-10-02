@@ -1,14 +1,11 @@
 package com.spring.basics.springbasics;
 
-import junit.prac.Sum;
+import com.spring.basics.springbasics.junit.prac.Sum;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
 
 @SpringBootTest
 class AddTests {

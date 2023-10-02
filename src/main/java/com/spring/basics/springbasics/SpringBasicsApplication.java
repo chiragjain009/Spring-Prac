@@ -1,10 +1,7 @@
 package com.spring.basics.springbasics;
 
 
-import loose.coupling.prac.basic.BinarySearch;
-import loose.coupling.prac.cdi.AnimalDao;
-import loose.coupling.prac.extractFromProp.ExtractPropFromProperties;
-import loose.coupling.prac.scope.PeopleDao;
+import com.spring.basics.springbasics.loose.coupling.prac.extractFromProp.ExtractPropFromProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

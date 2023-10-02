@@ -1,4 +1,4 @@
-package loose.coupling.prac.basic;
+package com.spring.basics.springbasics.loose.coupling.prac.basic;
 
 public class LooseCoupledProg {
     //what are the beans?

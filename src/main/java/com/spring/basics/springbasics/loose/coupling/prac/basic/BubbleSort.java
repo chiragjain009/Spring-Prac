@@ -1,7 +1,6 @@
-package loose.coupling.prac.basic;
+package com.spring.basics.springbasics.loose.coupling.prac.basic;
 
 import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
